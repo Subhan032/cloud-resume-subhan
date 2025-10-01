@@ -1,0 +1,10 @@
+# .gitignore
+node_modules/
+.env
+.venv/
+__pycache__/
+*.pyc
+.terraform/
+*.tfstate
+*.tfstate.backup
+/aws_credentials
