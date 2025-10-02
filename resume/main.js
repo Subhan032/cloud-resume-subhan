@@ -5,7 +5,7 @@ async function loadCounter() {
 
   try {
     // We'll replace this URL with API Gateway endpoint once deployed
-    const resp = await fetch('/api/visitor', { method: 'GET' });
+    const resp = await fetch('https://eu0vqewqtl.execute-api.ap-south-1.amazonaws.com/visitor', { method: 'GET' });
     if (!resp.ok) throw new Error('no counter');
     const data = await resp.json();
     counterEl.textContent = data.count ?? '—';
