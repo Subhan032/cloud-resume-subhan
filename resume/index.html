@@ -4,41 +4,100 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Subhan Raza — Cloud Resume</title>
+
+  <!-- Google Font (uses web font; if you prefer offline, choose a system font) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0b2545" />
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Subhan Raza</h1>
-      <p class="tagline">Cloud & DevOps enthusiast — AWS | Python | Terraform</p>
-    </header>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="avatar-placeholder" aria-hidden="true">SR</div>
+      <h1 class="name">Subhan Raza</h1>
+      <p class="role">Cloud & DevOps • Security-focused</p>
 
-    <section class="about">
-      <h2>About</h2>
-      <p>I’m a recent Computer Science graduate building cloud-native projects. I enjoy cloud security, DevOps, and building automation. This is my cloud-hosted resume project.</p>
-    </section>
+      <div class="contact">
+        <a href="mailto:Subhanraza032@gmail.com" class="contact-line">✉️ Subhanraza032@gmail.com</a>
+        <a href="tel:+923227643183" class="contact-line">📞 +92 322 7643183</a>
+        <a href="https://www.linkedin.com/in/subhan032/" target="_blank" rel="noopener" class="contact-line">🔗 linkedin.com/in/subhan032</a>
+      </div>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>AWS (S3, CloudFront, Lambda, DynamoDB)</li>
-        <li>Terraform, GitHub Actions</li>
-        <li>Python (Lambda), Docker</li>
-      </ul>
-    </section>
+      <div class="skills card">
+        <h3>Skills</h3>
+        <ul>
+          <li>AWS: S3, EC2, IAM, VPC, RDS, CloudWatch</li>
+          <li>Azure: VMs, Blob Storage</li>
+          <li>Terraform • CloudFormation</li>
+          <li>Docker • Kubernetes (Minikube)</li>
+          <li>Python • Bash • GitHub Actions</li>
+          <li>Security: Nessus, OWASP ZAP</li>
+        </ul>
+      </div>
 
-    <section class="experience">
-      <h2>Experience & Projects</h2>
-      <p>- Cloud Resume Challenge (this project)</p>
-      <p>- SecurePass (final year project): password manager mobile app</p>
-    </section>
+      <div class="education card">
+        <h3>Education</h3>
+        <p><strong>Bachelor of Computer Science</strong><br>University of Hertfordshire, UK — 2025</p>
+        <p class="muted">Relevant: Network Security, Incident Response, Ethical Hacking</p>
+      </div>
 
-    <footer>
-      <div id="visitor-counter">Visits: <span id="counter">—</span></div>
-      <p>Hosted on AWS | No custom domain</p>
-    </footer>
-  </main>
+      <div class="visits card">
+        <h3>Visits</h3>
+        <div class="counter">Visits: <span id="counter">—</span></div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="summary card">
+        <h2>Professional Summary</h2>
+        <p>I build and manage cloud infrastructure with a strong emphasis on security, automation, and reliability. Experienced with AWS and Azure, Infrastructure as Code using Terraform, containerization, and continuous deployment pipelines. I enjoy integrating security best practices across cloud environments and building repeatable automated deployments.</p>
+      </section>
+
+      <section class="experience card">
+        <h2>Professional Experience</h2>
+        <p><strong>Self-Directed Cloud & DevOps Projects</strong></p>
+        <ul>
+          <li>Provisioned and managed cloud infrastructure using AWS (EC2, S3, IAM, VPC, CloudFormation) and Azure (VMs, Blob Storage, Resource Groups).</li>
+          <li>Automated infrastructure deployment with Terraform for consistent environments.</li>
+          <li>Built containerized apps with Docker and managed multi-container setups using Docker Compose and Kubernetes (Minikube).</li>
+          <li>Configured logging, alerting and monitoring with AWS CloudWatch and Azure Monitor.</li>
+          <li>Applied IAM policies and RBAC to secure cloud resources and performed vulnerability assessments using Nessus.</li>
+        </ul>
+      </section>
+
+      <section class="projects card">
+        <h2>Projects</h2>
+
+        <article>
+          <h3>Dockerized Web Application</h3>
+          <p>Containerized a Node.js app with custom Dockerfiles and published images to Docker Hub. Deployed using Docker Compose for multi-service orchestration.</p>
+        </article>
+
+        <article>
+          <h3>Kubernetes Deployment</h3>
+          <p>Set up a Minikube cluster and deployed a Flask app with ReplicaSets and Services. Implemented rolling updates to ensure zero downtime.</p>
+        </article>
+
+        <article>
+          <h3>Terraform Infrastructure Deployment</h3>
+          <p>Provisioned cloud architecture with Terraform modules (VPCs, subnets, EC2, RDS). Managed remote state in S3 with DynamoDB locking.</p>
+        </article>
+
+        <article>
+          <h3>AWS Cloud Practitioner Lab</h3>
+          <p>Practiced AWS fundamentals and designed a secure 2-tier web + database architecture on AWS.</p>
+        </article>
+      </section>
+
+      <section class="footer-note card">
+        <h2>More</h2>
+        <p class="muted">For code samples, infrastructure diagrams, or references, please visit my GitHub or message me on LinkedIn.</p>
+      </section>
+    </main>
+  </div>
 
   <script src="main.js"></script>
 </body>
 </html>
+
